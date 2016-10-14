@@ -1,0 +1,19 @@
+<head>
+  <title>ratapp</title>
+</head>
+
+<body>
+  {{> CommentList}}
+</body>
+
+<template name="CommentList">
+  <h1>Rat</h1>
+
+  <ul>
+  {{#each comments}}
+    <li>Comment</li>
+  {{else}}
+    <li>Sorry, No Comments Yet!</li>  
+  {{/each }}
+  </ul>
+</template>
